@@ -1,0 +1,9 @@
+<ion-header><ion-toolbar><ion-title>Contactos</ion-title></ion-toolbar></ion-header>
+<ion-content>
+  <ion-button expand="block" (click)="goToAddContact()">Agregar Contacto</ion-button>
+  <ion-list *ngIf="contacts$ | async as contacts">
+    <ion-item *ngFor="let contact of contacts">
+      {{ contact.nombre }} - {{ contact.telefono }}
+    </ion-item>
+  </ion-list>
+</ion-content>

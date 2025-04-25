@@ -1,0 +1,7 @@
+<ion-header><ion-toolbar><ion-title>Agregar Contacto</ion-title></ion-toolbar></ion-header>
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ion-item><ion-input formControlName="telefono" placeholder="Teléfono del contacto"></ion-input></ion-item>
+    <ion-button expand="block" type="submit">Agregar</ion-button>
+  </form>
+</ion-content>

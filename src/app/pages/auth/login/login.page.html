@@ -1,0 +1,8 @@
+<ion-header><ion-toolbar><ion-title>Iniciar Sesión</ion-title></ion-toolbar></ion-header>
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="onLogin()">
+    <ion-item><ion-input formControlName="email" placeholder="Correo"></ion-input></ion-item>
+    <ion-item><ion-input type="password" formControlName="password" placeholder="Contraseña"></ion-input></ion-item>
+    <ion-button expand="block" type="submit">Ingresar</ion-button>
+  </form>
+</ion-content>
